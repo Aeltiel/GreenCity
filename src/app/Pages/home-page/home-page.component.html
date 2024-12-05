@@ -1,1 +1,18 @@
 <p>home-page works!</p>
+<app-green-space></app-green-space>
+<form #spaceForm="ngForm" (ngSubmit)="onSubmit(spaceForm)">
+  <div>
+    <label for="name">Nom : </label>
+    <input type="text" id="name" name="name" ngModel required />
+  </div>
+  <div>
+    <label for="emplacement">Emplacement : </label>
+    <input type="text" id="emplacement" name="latitude" ngModel required />
+    <input type="text" id="emplacement" name="longitude" ngModel required />
+  </div>
+  <div>
+    <label for="superficie">Superficie : </label>
+    <input type="number" name="superficie" id="superficie" ngModel required />
+  </div>
+  <button type="submit">Envoyer</button>
+</form>
