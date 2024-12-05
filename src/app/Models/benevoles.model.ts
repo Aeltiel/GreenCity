@@ -1,4 +1,4 @@
 export interface Benevoles {
-  _id: string;
+  id: string;
   name: string;
 }

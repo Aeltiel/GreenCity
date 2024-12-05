@@ -1,0 +1,225 @@
+{
+    "space" : 
+    [
+        {
+            "id" : "1",
+            "nom": "Parc des Buttes-Chaumont",
+            "emplacement": {
+                "latitude": 48.8834,
+                "longitude": 2.3922
+            },
+            "superficie": 25,
+            "plantes": [
+                "Chêne",
+                "Sapin",
+                "Lavande",
+                "Rose",
+                "Lierre"
+            ],
+            "responsable": "Alice Dupont",
+            "membres_actifs": [
+                "Jean Martin",
+                "Sophie Lefèvre",
+                "Pierre Durand"
+            ]
+        },
+        {
+            "id" : "2",
+            "nom": "Jardin du Luxembourg",
+            "emplacement": {
+                "latitude": 48.8462,
+                "longitude": 2.3372
+            },
+            "superficie": 23,
+            "plantes": [
+                "Tulipe",
+                "Géranium",
+                "Rosier",
+                "Hortensia",
+                "Bambou"
+            ],
+            "responsable": "Marc Petit",
+            "membres_actifs": [
+                "Lucie Bernard",
+                "Thomas Dubois",
+                "Emma Moreau"
+            ]
+        },
+        {
+            "id" : "3",
+            "nom": "Parc de la Villette",
+            "emplacement": {
+                "latitude": 48.8851,
+                "longitude": 2.3880
+            },
+            "superficie": 55,
+            "plantes": [
+                "Peuplier",
+                "Cèdre",
+                "Fougère",
+                "Mélisse",
+                "Verveine"
+            ],
+            "responsable": "Laura Simon",
+            "membres_actifs": [
+                "Clara Martin",
+                "Victor Rousseau",
+                "Chloé Morel"
+            ]
+        },
+        {
+            "id" : "4",
+            "nom": "Jardin des Plantes",
+            "emplacement": {
+                "latitude": 48.8422,
+                "longitude": 2.3606
+            },
+            "superficie": 28,
+            "plantes": [
+                "Orchidée",
+                "Cyprès",
+                "Aster",
+                "Fuchsia",
+                "Cactus"
+            ],
+            "responsable": "Julien Leroy",
+            "membres_actifs": [
+                "Nathalie Faure",
+                "Antoine Lefebvre",
+                "Camille Gauthier"
+            ]
+        },
+        {
+            "id" : "5",
+            "nom": "Parc Monceau",
+            "emplacement": {
+                "latitude": 48.8771,
+                "longitude": 2.3139
+            },
+            "superficie": 8,
+            "plantes": [
+                "Châtaignier",
+                "Magnolia",
+                "Pavot",
+                "Lilas",
+                "Violet"
+            ],
+            "responsable": "François Bernard",
+            "membres_actifs": [
+                "Alice Ménard",
+                "Pauline Lebrun",
+                "Léo Caron"
+            ]
+        },
+        {
+            "id" : "6",
+            "nom": "Parc André Citroën",
+            "emplacement": {
+                "latitude": 48.8403,
+                "longitude": 2.2810
+            },
+            "superficie": 14,
+            "plantes": [
+                "Bouleau",
+                "Saule",
+                "Aloe Vera",
+                "Marigold",
+                "Basilic"
+            ],
+            "responsable": "Sébastien Martin",
+            "membres_actifs": [
+                "Nicolas Charpentier",
+                "Juliette Fontaine",
+                "Elodie Guillot"
+            ]
+        },
+        {
+            "id" : "7",
+            "nom": "Jardin des Serres d'Auteuil",
+            "emplacement": {
+                "latitude": 48.8425,
+                "longitude": 2.2540
+            },
+            "superficie": 8,
+            "plantes": [
+                "Figuier",
+                "Palmier",
+                "Clematite",
+                "Fuchsia",
+                "Pérovskia"
+            ],
+            "responsable": "Christine Dubois",
+            "membres_actifs": [
+                "Marc Roussel",
+                "Isabelle Thierry",
+                "Julien Pichon"
+            ]
+        },
+        {
+            "id" : "8",
+            "nom": "Parc de Bercy",
+            "emplacement": {
+                "latitude": 48.8341,
+                "longitude": 2.3838
+            },
+            "superficie": 14,
+            "plantes": [
+                "Erable",
+                "Oranger",
+                "Magnolia",
+                "Lavande",
+                "Aubépine"
+            ],
+            "responsable": "Olivier Lefèvre",
+            "membres_actifs": [
+                "Sophie Giraud",
+                "Martin Pelletier",
+                "Lucie Carpentier"
+            ]
+        },
+        {
+            "id" : "9",
+            "nom": "Parc des Princes",
+            "emplacement": {
+                "latitude": 48.8415,
+                "longitude": 2.2615
+            },
+            "superficie": 5,
+            "plantes": [
+                "Pommier",
+                "Cerisier",
+                "Pavot",
+                "Fleur de Lys",
+                "Mauve"
+            ],
+            "responsable": "Emilie Denis",
+            "membres_actifs": [
+                "Julien Renaud",
+                "Cécile Leroy",
+                "Hugo Marchand"
+            ]
+        },
+        {
+            "id" : "10",
+            "nom": "Parc de la Tête d'Or",
+            "emplacement": {
+                "latitude": 45.7770,
+                "longitude": 4.8457
+            },
+            "superficie": 117,
+            "plantes": [
+                "Chêne",
+                "Hêtre",
+                "Pêcher",
+                "Tulipe",
+                "Rosier"
+            ],
+            "responsable": "Nathalie Adam",
+            "membres_actifs": [
+                "François Dupuis",
+                "Alice Bernard",
+                "Victor Simon"
+            ]
+        }
+    ]
+}
