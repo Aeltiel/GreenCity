@@ -1,6 +1,10 @@
-@for(greenSpace of greenSpaces; track greenSpace.id){
-<app-green-space [space]="greenSpace"></app-green-space>
-}
+<h1>{{ space.nom }}</h1>
+<div>
+  <p>{{ space.superficie }} Hectares</p>
+  <p>{{ space.responsable }}</p>
+  <p>Latitude : {{ space.latitude }}</p>
+  <p>Longitude : {{ space.longitude }}</p>
+</div>
 
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <label>
@@ -26,3 +30,5 @@
   </label>
   <button type="submit">Envoyer</button>
 </form>
+
+<button (click)="deleteSpace(space.id)">Supprimer l'espace vert</button>
