@@ -13,7 +13,10 @@ export class GreenSpaceSService {
   getGreenSpaces(): Observable<GreenSpace[]> {
     return this.http.get<GreenSpace[]>(`${this.baseUrl}`);
   }
-  getOneGreenSpace(): Observable<GreenSpace> {
-    return this.http.get<GreenSpace>(`${this.baseUrl}0`);
+  getOneGreenSpace(id: string): Observable<GreenSpace> {
+    return this.http.get<GreenSpace>(`${this.baseUrl}/${id}`);
+  }
+  postGreenSpace(space: GreenSpace): Observable<GreenSpace> {
+    return this.http.post<GreenSpace>(`${this.baseUrl}`, space);
   }
 }

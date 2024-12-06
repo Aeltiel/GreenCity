@@ -2,19 +2,27 @@
 <app-green-space [space]="greenSpace"></app-green-space>
 }
 
-<form>
-  <div>
-    <label for="name">Nom : </label>
-    <input type="text" id="name" name="name" ngModel required />
-  </div>
-  <div>
-    <label for="emplacement">Emplacement : </label>
-    <input type="text" id="emplacement" name="latitude" ngModel required />
-    <input type="text" id="emplacement" name="longitude" ngModel required />
-  </div>
-  <div>
-    <label for="superficie">Superficie : </label>
-    <input type="number" name="superficie" id="superficie" ngModel required />
-  </div>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label>
+    Nom :
+    <input type="text" formControlName="nom" />
+  </label>
+  <label>
+    Emplacement :
+    <input type="number" formControlName="latitude" placeholder="Latitude" />
+    <input type="number" formControlName="longitude" placeholder="Longitude" />
+  </label>
+  <label>
+    Superficie :
+    <input type="number" formControlName="superficie" />
+  </label>
+  <label>
+    Plantes
+    <input type="" formControlName="plantes" />
+  </label>
+  <label>
+    Responsable :
+    <input type="text" formControlName="responsable" />
+  </label>
   <button type="submit">Envoyer</button>
 </form>

@@ -1,7 +1,7 @@
-<a class="greenSpaceCard" routerLink="/space">
-  <div>
+<a class="greenSpaceCard" [routerLink]="['/space', space().id]">
+  <div class="greenSpaceCard__title">
     <h3>{{ space().nom }}</h3>
-    <p>{{ space().superficie }}</p>
+    <p>{{ space().superficie }} Hectares</p>
   </div>
-  <p>{{ space().responsable }}</p>
+  <p class="greenSpaceCard__text">{{ space().responsable }}</p>
 </a>

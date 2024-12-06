@@ -4,5 +4,5 @@ import { GreenSpaceDetailComponent } from './Pages/green-space-detail/green-spac
 
 export const routes: Routes = [
   { path: '', component: HomePageComponent },
-  { path: 'space', component: GreenSpaceDetailComponent },
+  { path: 'space/:id', component: GreenSpaceDetailComponent },
 ];

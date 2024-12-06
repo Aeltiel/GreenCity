@@ -9,5 +9,5 @@ import { GreenSpace } from '../../Models/greenSpace.model';
   styleUrl: './green-space.component.scss',
 })
 export class GreenSpaceComponent {
-  space = input<GreenSpace>({} as GreenSpace);
+  space = input<GreenSpace>({} as GreenSpace); //récupère les données.
 }

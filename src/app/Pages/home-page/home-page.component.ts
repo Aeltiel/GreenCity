@@ -2,17 +2,32 @@ import { Component, OnInit } from '@angular/core';
 import { GreenSpaceComponent } from '../../Composants/green-space/green-space.component';
 import { GreenSpaceSService } from '../../Services/green-space-s.service';
 import { GreenSpace } from '../../Models/greenSpace.model';
-
+import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 @Component({
   selector: 'app-home-page',
-  imports: [GreenSpaceComponent],
+  imports: [GreenSpaceComponent, ReactiveFormsModule],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss',
   providers: [GreenSpaceSService],
 })
 export class HomePageComponent implements OnInit {
-  onSubmit(form: any) {
-    console.log('Form Submitted!', form);
+  form: FormGroup = new FormGroup({
+    nom: new FormControl(''),
+    latitude: new FormControl(''),
+    longitude: new FormControl(''),
+    superficie: new FormControl(''),
+    plantes: new FormControl(''),
+    responsable: new FormControl(''),
+  });
+
+  onSubmit() {
+    const data = this.form.value;
+    console.log(data);
+    this.greenSpaceService.postGreenSpace().subscribe({
+      next: (newSpace) => {
+        data = newSpace;
+      },
+    });
   }
 
   greenSpaces: GreenSpace[] = [];
@@ -20,7 +35,6 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
     this.greenSpaceService.getGreenSpaces().subscribe({
       next: (space) => {
-        console.log(space);
         this.greenSpaces = space;
       },
       error: (err) => {
