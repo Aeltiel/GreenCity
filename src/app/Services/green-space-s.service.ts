@@ -19,4 +19,8 @@ export class GreenSpaceSService {
   postGreenSpace(space: GreenSpace): Observable<GreenSpace> {
     return this.http.post<GreenSpace>(`${this.baseUrl}`, space);
   }
+
+  putGreenSpace(space: GreenSpace, id: string): Observable<GreenSpace> {
+    return this.http.put<GreenSpace>(`${this.baseUrl}/${id}`, space);
+  }
 }

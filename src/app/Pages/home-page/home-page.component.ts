@@ -23,9 +23,12 @@ export class HomePageComponent implements OnInit {
   onSubmit() {
     const data = this.form.value;
     console.log(data);
-    this.greenSpaceService.postGreenSpace().subscribe({
+    this.greenSpaceService.postGreenSpace(data).subscribe({
       next: (newSpace) => {
-        data = newSpace;
+        newSpace = data;
+      },
+      error: (err) => {
+        console.log("Erreur dans la récupérétion de l'espace", err);
       },
     });
   }
