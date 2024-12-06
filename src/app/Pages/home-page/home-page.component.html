@@ -1,0 +1,5 @@
+@for(greenSpace of greenSpaces; track greenSpace.id){
+<app-green-space [space]="greenSpace"></app-green-space>
+}
+
+<button routerLink="/spaceForm">Ajouter un nouvel espace vert !</button>
