@@ -209,5 +209,107 @@
       "plantes": "Rosiers, Géranium, Sapins",
       "responsable": "Simon Manchot"
     }
+  ],
+  "plantes":[
+    {
+    "id": 1,
+    "nomCommun": "Tomate",
+    "nomScientifique": "Solanum lycopersicum",
+    "typeDeSol": "Sol riche et bien drainé",
+    "expositionAuSoleil": "Plein soleil",
+    "frequenceArrosage": "2 fois par semaine",
+    "saisonDePlantation": "Mars à Mai",
+    "saisonDeRecolte": "Juin à Septembre"
+  },
+  {
+    "id": 2,
+    "nomCommun": "Basilic",
+    "nomScientifique": "Ocimum basilicum",
+    "typeDeSol": "Sol léger et bien drainé",
+    "expositionAuSoleil": "Plein soleil",
+    "frequenceArrosage": "1 fois par semaine",
+    "saisonDePlantation": "Mai à Juin",
+    "saisonDeRecolte": "Juin à Octobre"
+  },
+  {
+    "id": 3,
+    "nomCommun": "Carotte",
+    "nomScientifique": "Daucus carota",
+    "typeDeSol": "Sol sablonneux",
+    "expositionAuSoleil": "Mi-ombre à plein soleil",
+    "frequenceArrosage": "1 fois par semaine",
+    "saisonDePlantation": "Avril à Juillet",
+    "saisonDeRecolte": "Juin à Novembre"
+  },
+  {
+    "id": 4,
+    "nomCommun": "Laitue",
+    "nomScientifique": "Lactuca sativa",
+    "typeDeSol": "Sol fertile et frais",
+    "expositionAuSoleil": "Mi-ombre",
+    "frequenceArrosage": "2 à 3 fois par semaine",
+    "saisonDePlantation": "Mars à Août",
+    "saisonDeRecolte": "Mai à Octobre"
+  },
+  {
+    "id": 5,
+    "nomCommun": "Courgette",
+    "nomScientifique": "Cucurbita pepo",
+    "typeDeSol": "Sol riche et bien drainé",
+    "expositionAuSoleil": "Plein soleil",
+    "frequenceArrosage": "1 à 2 fois par semaine",
+    "saisonDePlantation": "Mai à Juin",
+    "saisonDeRecolte": "Juillet à Septembre"
+  },
+  {
+    "id": 6,
+    "nomCommun": "Fraise",
+    "nomScientifique": "Fragaria × ananassa",
+    "typeDeSol": "Sol léger et bien drainé",
+    "expositionAuSoleil": "Plein soleil",
+    "frequenceArrosage": "1 fois par semaine",
+    "saisonDePlantation": "Mars à Mai",
+    "saisonDeRecolte": "Mai à Juillet"
+  },
+  {
+    "id": 7,
+    "nomCommun": "Oignon",
+    "nomScientifique": "Allium cepa",
+    "typeDeSol": "Sol bien drainé et riche",
+    "expositionAuSoleil": "Plein soleil",
+    "frequenceArrosage": "1 fois par semaine",
+    "saisonDePlantation": "Mars à Avril",
+    "saisonDeRecolte": "Juillet à Août"
+  },
+  {
+    "id": 8,
+    "nomCommun": "Persil",
+    "nomScientifique": "Petroselinum crispum",
+    "typeDeSol": "Sol riche et humide",
+    "expositionAuSoleil": "Mi-ombre",
+    "frequenceArrosage": "1 fois par semaine",
+    "saisonDePlantation": "Mars à Août",
+    "saisonDeRecolte": "Mai à Novembre"
+  },
+  {
+    "id": 9,
+    "nomCommun": "Poivron",
+    "nomScientifique": "Capsicum annuum",
+    "typeDeSol": "Sol riche et bien drainé",
+    "expositionAuSoleil": "Plein soleil",
+    "frequenceArrosage": "2 fois par semaine",
+    "saisonDePlantation": "Avril à Mai",
+    "saisonDeRecolte": "Juin à Septembre"
+  },
+  {
+    "id": 10,
+    "nomCommun": "Radis",
+    "nomScientifique": "Raphanus sativus",
+    "typeDeSol": "Sol léger et bien drainé",
+    "expositionAuSoleil": "Plein soleil",
+    "frequenceArrosage": "1 fois par semaine",
+    "saisonDePlantation": "Février à Avril",
+    "saisonDeRecolte": "Avril à Juin"
+  }
   ]
 }
