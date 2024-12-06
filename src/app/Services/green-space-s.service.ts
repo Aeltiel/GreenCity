@@ -20,7 +20,11 @@ export class GreenSpaceSService {
     return this.http.post<GreenSpace>(`${this.baseUrl}`, space);
   }
 
-  putGreenSpace(space: GreenSpace, id: string): Observable<GreenSpace> {
-    return this.http.put<GreenSpace>(`${this.baseUrl}/${id}`, space);
+  patchGreenSpace(space: GreenSpace, id: string): Observable<GreenSpace> {
+    return this.http.patch<GreenSpace>(`${this.baseUrl}/${id}`, space);
+  }
+
+  deleteGreenSpace(id: string): Observable<GreenSpace> {
+    return this.http.delete<GreenSpace>(`${this.baseUrl}/${id}`);
   }
 }

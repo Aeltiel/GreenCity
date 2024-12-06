@@ -3,10 +3,8 @@
     {
       "id": "1",
       "nom": "Parc des Buttes-Chaumont",
-      "emplacement": {
-        "latitude": 48.8834,
-        "longitude": 2.3922
-      },
+      "latitude": 48.8834,
+      "longitude": 2.3922,
       "superficie": 25,
       "plantes": [
         "Chêne",
@@ -25,10 +23,8 @@
     {
       "id": "2",
       "nom": "Jardin du Luxembourg",
-      "emplacement": {
-        "latitude": 48.8462,
-        "longitude": 2.3372
-      },
+      "latitude": 48.8462,
+      "longitude": 2.3372,
       "superficie": 23,
       "plantes": [
         "Tulipe",
@@ -47,10 +43,8 @@
     {
       "id": "3",
       "nom": "Parc de la Villette",
-      "emplacement": {
-        "latitude": 48.8851,
-        "longitude": 2.388
-      },
+      "latitude": 48.8851,
+      "longitude": 2.388,
       "superficie": 55,
       "plantes": [
         "Peuplier",
@@ -69,10 +63,8 @@
     {
       "id": "4",
       "nom": "Jardin des Plantes",
-      "emplacement": {
-        "latitude": 48.8422,
-        "longitude": 2.3606
-      },
+      "latitude": 48.8422,
+      "longitude": 2.3606,
       "superficie": 28,
       "plantes": [
         "Orchidée",
@@ -91,10 +83,8 @@
     {
       "id": "5",
       "nom": "Parc Monceau",
-      "emplacement": {
-        "latitude": 48.8771,
-        "longitude": 2.3139
-      },
+      "latitude": 48.8771,
+      "longitude": 2.3139,
       "superficie": 8,
       "plantes": [
         "Châtaignier",
@@ -113,10 +103,8 @@
     {
       "id": "6",
       "nom": "Parc André Citroën",
-      "emplacement": {
-        "latitude": 48.8403,
-        "longitude": 2.281
-      },
+      "latitude": 48.8403,
+      "longitude": 2.281,
       "superficie": 14,
       "plantes": [
         "Bouleau",
@@ -135,10 +123,8 @@
     {
       "id": "7",
       "nom": "Jardin des Serres d'Auteuil",
-      "emplacement": {
-        "latitude": 48.8425,
-        "longitude": 2.254
-      },
+      "latitude": 48.8425,
+      "longitude": 2.254,
       "superficie": 8,
       "plantes": [
         "Figuier",
@@ -157,10 +143,8 @@
     {
       "id": "8",
       "nom": "Parc de Bercy",
-      "emplacement": {
-        "latitude": 48.8341,
-        "longitude": 2.3838
-      },
+      "latitude": 48.8341,
+      "longitude": 2.3838,
       "superficie": 14,
       "plantes": [
         "Erable",
@@ -179,10 +163,8 @@
     {
       "id": "9",
       "nom": "Parc des Princes",
-      "emplacement": {
-        "latitude": 48.8415,
-        "longitude": 2.2615
-      },
+      "latitude": 48.8415,
+      "longitude": 2.2615,
       "superficie": 5,
       "plantes": [
         "Pommier",
@@ -201,10 +183,8 @@
     {
       "id": "10",
       "nom": "Parc de la Tête d'Or",
-      "emplacement": {
-        "latitude": 45.777,
-        "longitude": 4.8457
-      },
+      "latitude": 45.777,
+      "longitude": 4.8457,
       "superficie": 117,
       "plantes": [
         "Chêne",
@@ -219,15 +199,6 @@
         "Alice Bernard",
         "Victor Simon"
       ]
-    },
-    {
-      "id": "194f",
-      "nom": "Nouvel Espace Vert",
-      "latitude": 150,
-      "longitude": 360,
-      "superficie": 15,
-      "plantes": "Sapins, Peupliers, Rosiers",
-      "responsable": "Martin Dupont"
     }
   ]
 }
