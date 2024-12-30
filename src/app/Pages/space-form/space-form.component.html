@@ -20,5 +20,9 @@
     Responsable :
     <input type="text" formControlName="responsable" />
   </label>
+  <label>
+    Image : 
+    <input type="file" accept="image/*" (change)="onFileSelected($event)"/>
+  </label>
   <button type="submit">Envoyer</button>
 </form>

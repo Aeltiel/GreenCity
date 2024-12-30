@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { GreenSpaceSService } from '../../Services/green-space-s.service';
+import { GreenSpace } from '../../Models/greenSpace.model';
 import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -22,18 +23,31 @@ export class SpaceFormComponent {
     superficie: new FormControl(''),
     plantes: new FormControl(''),
     responsable: new FormControl(''),
+    image : new FormControl('')
   });
 
+  onFileSelected(event :Event) {
+    const file = (event.target as HTMLInputElement).files![0];
+    this.form.get('image')!.setValue(file);
+  }
+
   onSubmit() {
-    const data = this.form.value;
+    const data = new FormData();
+    data.append('nom', this.form.value.nom);
+    data.append('latitude', this.form.value.latitude);
+    data.append('longitude', this.form.value.longitude);
+    data.append('superficie', this.form.value.superficie);
+    data.append('plantes', this.form.value.plantes);
+    data.append('responsable', this.form.value.responsable);
+    data.append('image', this.form.get('image')!.value);
+    
     console.log(data);
     this.greenSpaceService.postGreenSpace(data).subscribe({
-      next: (newSpace) => {
-        newSpace = data;
+      next: (newSpace : GreenSpace) => {
         this.router.navigate(['/']);
       },
       error: (err) => {
-        console.log("Erreur dans la récupérétion de l'espace", err);
+        console.log("Erreur dans l'enregirstrement de l'espace", err);
       },
     });
   }

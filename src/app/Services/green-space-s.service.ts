@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class GreenSpaceSService {
-  baseUrl: string = 'http://localhost:3000/space';
+  baseUrl: string = 'http://localhost:3000/api/greenSpace';
   constructor(private http: HttpClient) {}
 
   getGreenSpaces(): Observable<GreenSpace[]> {
@@ -16,7 +16,7 @@ export class GreenSpaceSService {
   getOneGreenSpace(id: string): Observable<GreenSpace> {
     return this.http.get<GreenSpace>(`${this.baseUrl}/${id}`);
   }
-  postGreenSpace(space: GreenSpace): Observable<GreenSpace> {
+  postGreenSpace(space: FormData): Observable<GreenSpace> {
     return this.http.post<GreenSpace>(`${this.baseUrl}`, space);
   }
 
