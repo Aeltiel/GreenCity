@@ -6,4 +6,5 @@ export interface GreenSpace {
   superficie: number;
   plantes: [string];
   responsable: string;
+  imageSpaceUrl: string 
 }
