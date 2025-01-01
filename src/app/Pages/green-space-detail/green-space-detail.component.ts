@@ -20,22 +20,41 @@ export class GreenSpaceDetailComponent implements OnInit {
       superficie: new FormControl(''),
       plantes: new FormControl(''),
       responsable: new FormControl(''),
+      image : new FormControl('')
     });
   }
 
   space: GreenSpace = {} as GreenSpace;
   private route = inject(ActivatedRoute);
-  id: string = '';
   private router = inject(Router);
+  id: string = '';
 
   form: FormGroup;
 
+  onFileSelected(event :Event) {
+    const file = (event.target as HTMLInputElement).files![0];
+    this.form.get('image')!.patchValue(file);
+  }
+
   onSubmit() {
-    const data = this.form.value;
+    const data = new FormData();
+    const newImg = this.form.get('image')!.value;
+
+    data.append('nom', this.form.value.nom);
+    data.append('latitude', this.form.value.latitude);
+    data.append('longitude', this.form.value.longitude);
+    data.append('superficie', this.form.value.superficie);
+    data.append('plantes', this.form.value.plantes);
+    data.append('responsable', this.form.value.responsable);
+
+    if(newImg){
+      data.append('image', newImg);
+    }
+
     console.log(data);
     this.greenSpaceService.patchGreenSpace(data, this.id).subscribe({
-      next: (newSpace) => {
-        newSpace = data;
+      next: (newSpace : GreenSpace) => {
+        location.reload();
       },
       error: (err) => {
         console.log("Erreur dans la modification de l'espace", err);
@@ -47,8 +66,10 @@ export class GreenSpaceDetailComponent implements OnInit {
     this.route.params.subscribe((params) => {
       console.log('mon params : ', params);
       this.id = params['id'];
+      console.log('mon id : ', this.id);
       this.greenSpaceService.getOneGreenSpace(this.id).subscribe({
         next: (one) => {
+          console.log(one)
           this.space = one;
           console.log(this.space);
           this.form.setValue({
@@ -58,6 +79,7 @@ export class GreenSpaceDetailComponent implements OnInit {
             superficie: this.space.superficie || '',
             plantes: this.space.plantes || '',
             responsable: this.space.responsable || '',
+            image : this.space.imageSpaceUrl || ''
           });
         },
         error: (err) => {

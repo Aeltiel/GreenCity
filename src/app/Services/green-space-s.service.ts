@@ -20,7 +20,7 @@ export class GreenSpaceSService {
     return this.http.post<GreenSpace>(`${this.baseUrl}`, space);
   }
 
-  patchGreenSpace(space: GreenSpace, id: string): Observable<GreenSpace> {
+  patchGreenSpace(space: FormData, id: string): Observable<GreenSpace> {
     return this.http.patch<GreenSpace>(`${this.baseUrl}/${id}`, space);
   }
 
