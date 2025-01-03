@@ -1,5 +1,15 @@
-@for(greenSpace of greenSpaces; track greenSpace._id){
-<app-green-space [space]="greenSpace"></app-green-space>
-}
+<main>
+    <div class="banniere">
+        <img src="/imgBanniere.jpg" alt="banniere">
+        <div class="banniere__title">
+            <h1>Bienvenue à Green City, votre association pour aider dans l'entretien des espaces verts !</h1>
+        </div>
 
-<button routerLink="/spaceForm">Ajouter un nouvel espace vert !</button>
+    </div>
+    @for(greenSpace of greenSpaces; track greenSpace._id){
+    <app-green-space [space]="greenSpace"></app-green-space>
+    }
+    
+    <button routerLink="/spaceForm">Ajouter un nouvel espace vert !</button>
+</main>
+
