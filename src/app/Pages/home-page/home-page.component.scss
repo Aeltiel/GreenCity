@@ -31,5 +31,25 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-bottom: 50px;
     }
+    &__CTA{
+        display: inline-block;
+        margin-bottom: 50px;
+        background-color: #6A4A3C;
+        height: 50px;
+        width: 300px;
+        border-radius: 15px;
+        margin-left: 50%;
+        text-align: center;
+        line-height: 50px;
+        color: #F7F7F2;
+        font-size: 1.5em;
+    }
+}
+.addSpace{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: center;
 }
