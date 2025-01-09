@@ -6,9 +6,11 @@
         </div>
 
     </div>
-    @for(greenSpace of greenSpaces; track greenSpace._id){
-    <app-green-space [space]="greenSpace"></app-green-space>
-    }
+    <section class="cardGreenSapce">
+        @for(greenSpace of greenSpaces; track greenSpace._id){
+        <app-green-space [space]="greenSpace"></app-green-space>
+        }
+    </section>
     
     <button routerLink="/spaceForm">Ajouter un nouvel espace vert !</button>
 </main>
