@@ -1,5 +1,5 @@
 export interface GreenSpace {
-  id: string;
+  _id: string;
   nom: string;
   latitude: number;
   longitude: number;

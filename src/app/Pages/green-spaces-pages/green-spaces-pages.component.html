@@ -1,0 +1,15 @@
+<main>
+    <div class="banniere">
+        <img src="/imgBanniere.jpg" alt="banniere">
+        <div class="banniere__title">
+            <h1>Venez visiter nos nombreux espaces et si vous le souhaitez participé à l'entrerien d'un espace près de chez vous.</h1>
+        </div>
+    </div>
+    <section class="greenSpaces">
+        <div class="cardGreenSpace__container">
+            @for(greenSpace of greenSpaces; track greenSpace._id){
+            <app-green-space [space]="greenSpace"></app-green-space>
+            }
+        </div>
+    </section>
+</main>
