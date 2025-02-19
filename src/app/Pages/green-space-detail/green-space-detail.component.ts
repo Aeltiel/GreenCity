@@ -1,29 +1,35 @@
 import { Component, OnInit, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { GreenSpace } from '../../Models/greenSpace.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GreenSpaceSService } from '../../Services/green-space-s.service';
+import { PlantesFormComponent } from '../../Composants/plantes-form/plantes-form.component';
+import { CardPlanteComponent } from '../../Composants/card-plante/card-plante.component';
 import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
+import { Plante } from '../../Models/plantes.model';
 
 @Component({
   selector: 'app-green-space-detail',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, PlantesFormComponent, CommonModule, CardPlanteComponent],
   templateUrl: './green-space-detail.component.html',
   styleUrl: './green-space-detail.component.scss',
   providers: [GreenSpaceSService],
 })
 export class GreenSpaceDetailComponent implements OnInit {
+  plantes: Plante[] = [];
+
   constructor(private greenSpaceService: GreenSpaceSService) {
     this.form = new FormGroup({
       nom: new FormControl(''),
       latitude: new FormControl(''),
       longitude: new FormControl(''),
       superficie: new FormControl(''),
-      plantes: new FormControl(''),
       responsable: new FormControl(''),
       image : new FormControl('')
     });
   }
 
+  viewForm: Boolean = false;
   space: GreenSpace = {} as GreenSpace;
   private route = inject(ActivatedRoute);
   private router = inject(Router);
@@ -44,7 +50,6 @@ export class GreenSpaceDetailComponent implements OnInit {
     data.append('latitude', this.form.value.latitude);
     data.append('longitude', this.form.value.longitude);
     data.append('superficie', this.form.value.superficie);
-    data.append('plantes', this.form.value.plantes);
     data.append('responsable', this.form.value.responsable);
 
     if(newImg){
@@ -77,7 +82,6 @@ export class GreenSpaceDetailComponent implements OnInit {
             latitude: this.space.latitude || '',
             longitude: this.space.longitude || '',
             superficie: this.space.superficie || '',
-            plantes: this.space.plantes || '',
             responsable: this.space.responsable || '',
             image : this.space.imageSpaceUrl || ''
           });

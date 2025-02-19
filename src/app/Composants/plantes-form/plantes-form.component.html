@@ -1,0 +1,35 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label>
+      Nom :
+      <input type="text" formControlName="nom" />
+    </label>
+    <label>
+        Nom Scientifique:
+        <input type="text" formControlName="nomScientifique" />
+      </label>
+    <label>
+        Type de Sol :
+      <input type="text" formControlName="typeSol" placeholder="Type de Sol" />
+    </label>
+    <label>
+        Exposition :
+      <input type="text" formControlName="exposition" />
+    </label>
+    <label>
+        Arrosage :
+      <input type="text" formControlName="arrosage" />
+    </label>
+    <label>
+        Saison de Plantation :
+      <input type="text" formControlName="saisonPlantation" />
+    </label>
+    <label>
+        Récolte :
+      <input type="text" formControlName="recolte" />
+    </label>
+    <label>
+      Image : 
+      <input type="file" accept="image/*" (change)="onFileSelected($event)"/>
+    </label>
+    <button type="submit">Envoyer</button>
+  </form>

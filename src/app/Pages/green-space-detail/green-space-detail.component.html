@@ -8,11 +8,17 @@
     />
   </div>
   <section class="container">
-    <div>
+    <div class="greenSpaceDetail__info">
       <p>{{ space.superficie }} Hectares</p>
       <p>{{ space.responsable }}</p>
       <p>Latitude : {{ space.latitude }}</p>
       <p>Longitude : {{ space.longitude }}</p>
+      <div class="greenSpaceDetail__plantes">
+        <h2>Plantes</h2>
+        @for(plante of plantes; track plante._id){
+          <app-card-plante [plante]="plantes"></app-card-plante>
+          }
+      </div>
     </div>
 
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
@@ -38,10 +44,6 @@
         <input type="number" formControlName="superficie" />
       </label>
       <label>
-        Plantes
-        <input type="" formControlName="plantes" />
-      </label>
-      <label>
         Responsable :
         <input type="text" formControlName="responsable" />
       </label>
@@ -51,7 +53,8 @@
       </label>
       <button type="submit">Envoyer</button>
     </form>
-
+    <button (click) ="viewForm = !viewForm">Ajouter une plante</button>
+    <app-plantes-form *ngIf="viewForm"></app-plantes-form>
     <button (click)="deleteSpace(space._id)">Supprimer l'espace vert</button>
   </section>
 </main>

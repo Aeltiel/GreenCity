@@ -1,0 +1,6 @@
+<a class="planteCard" [routerLink]="['/space/:id/plante', plante()._id]">
+    <div class="greenSpaceCard__title">
+      <h3>{{ plante().nom }}</h3>
+    </div>
+    <img [src]="plante().imagePlanteUrl" alt="Image de {{ plante().nom }}" class="greenSpaceCard__img" />
+  </a>

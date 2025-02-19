@@ -1,10 +1,13 @@
-export interface GreenSpace {
-  id: string;
-  nomCommun: string;
+export interface Plante {
+  _id: string;
+  nom: string;
   nomScientifique: string;
-  typeDeSol: string;
-  expositionAuSoleil: string;
-  frequenceArrosage: string;
-  saisonDePlantation: string;
-  saisonDeRecolte: string;
+  typeSol: string;
+  exposition: string;
+  arrosage: string;
+  saisonPlantation: string;
+  recolte: string;
+  imagePlanteUrl: string;
+  espaceVert: string[];
+  ficheEntretien: string[];
 }

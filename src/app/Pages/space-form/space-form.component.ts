@@ -37,7 +37,6 @@ export class SpaceFormComponent {
     data.append('latitude', this.form.value.latitude);
     data.append('longitude', this.form.value.longitude);
     data.append('superficie', this.form.value.superficie);
-    data.append('plantes', this.form.value.plantes);
     data.append('responsable', this.form.value.responsable);
     data.append('image', this.form.get('image')!.value);
     
